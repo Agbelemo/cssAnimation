@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img{
+    width: 30vw;
+    height: 20vw;
+    background: url("./assets/cloud.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10em;
+    transform: rotate(360deg) ;
+}
+
+button{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50px;
+    background: pink;
+    margin-left: 30em;
+    border: red;
+    transition: 2s;
+    color: rgb(155, 43, 230);
+
+}
+
+button:hover{
+    background: rgb(255, 217, 0);
+    transform: rotate(660deg);
+    color: rgb(128, 0, 0);
+    animation-name: drive;
+    animation-duration: 5sc;
+
+
+}
+
+
+.sky{
+    height: 20vw;
+    background: skyblue;
+}
+
+.grass{
+    height: 20vw;
+    background: seagreen;
+}
+
+.road{
+    height: 20vw;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 18px solid grey;
+    width: 100%;
+    position: absolute;
+}
+
+.line{
+    box-sizing: border-box;
+    border: 5px dashed rgb(255, 254, 254);
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 53em;
+}
+.cartoon{
+    width: 10vw;
+    height: 10vh;
+    background: url("./assets/514336_thumb-removebg-preview.png");
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 1em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: drive;
+    animation-duration: 5sc;
+}
+
+
+@keyframes drive{
+    from{transform: translateX(0);}
+    to{transform: translateX(500px);}
+}
